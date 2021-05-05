@@ -34,5 +34,5 @@ jobs:
       - name: jwtb - Use the Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
         with: 
-          name: assets-for-download-2
+          name: assets-for-download-2-18
           path: jwtb 
