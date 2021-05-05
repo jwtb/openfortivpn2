@@ -27,9 +27,9 @@ jobs:
           export PKG_CONFIG_PATH="$HOME/.openfortivpn-deps/lib/pkgconfig"
           ./configure --prefix=/usr --sysconfdir=/etc
           make
-          ls -altrR *
-          mkdir jwtb 
-          tar --exclude='./jwtb' -cvf jwtb/dir.tar 
+          mkdir jwtb           
+          ls -altr 
+          tar --exclude='./jwtb' -cvf jwtb/dir.tar .
           
       - name: jwtb - Use the Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
