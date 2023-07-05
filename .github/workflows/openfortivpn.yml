@@ -12,7 +12,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout Code
@@ -34,5 +34,5 @@ jobs:
       - name: jwtb - Use the Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
         with: 
-          name: assets-for-download-2-18-test
+          name: assets-for-download-2-test-22-04
           path: jwtb 
